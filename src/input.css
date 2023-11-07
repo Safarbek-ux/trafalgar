@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list-item:hover {
+    background: #458FF6;
+
+}
+
+.list-item,
+.list-item img,
+.list-item p,
+.list-item h5 {
+    transition: all 300ms ease-in-out;
+}
+
+.list-item:hover img {
+    transform: translateY(-150px);
+}
+
+.list-item:hover p {
+    transform: translateY(-60px);
+    color: white;
+}
+
+.list-item:hover h5 {
+    transform: translateY(-60px);
+    color: white;
+}
