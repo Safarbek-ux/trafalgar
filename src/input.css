@@ -2,9 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-.list-item:hover {
+@media only screen and (max-width:1105px) {
+    .list-learn {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-learn img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1173px) {
+    .hero {
+        width: 530px;
+    }
+}
+
+
+.list-item:hover,
+.services-li:hover {
     background: #458FF6;
 
+}
+
+.services-li,
+.services-li * {
+    transition: all 300ms ease-in-out;
+}
+
+.services-li:hover img {
+    transform: translateY(-100%);
+}
+
+.services-li:hover h5 {
+    transform: translateY(-150px);
+    color: white;
+}
+
+.services-li:hover p {
+    transform: translateY(-150px);
+    color: white;
+}
+
+.services-li:hover a {
+    transform: translateY(-150px);
+    color: white;
 }
 
 .list-item,
