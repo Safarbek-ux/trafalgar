@@ -15,7 +15,7 @@
   <body class="font-muli">
     <!-- Header section-->
 
-    <header class="pt-[135px] mb-20">
+    <header class="relative pt-[135px] mb-20">
       <div
         class="container mx-auto max-w-7xl items-center w-full px-4 flex justify-between"
       >
@@ -53,7 +53,7 @@
               >
             </li>
           </ul>
-          <button class="md:hidden bg-transparent border-none">
+          <button class="hamburger-js md:hidden bg-transparent border-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -71,6 +71,35 @@
           </button>
         </nav>
       </div>
+       <nav class="rounded-b-[50%] p-10  border-b-bl border-b-2 opacity-0 transition-all duration-300 ease-linear absolute z-20 container mx-auto max-w-7xl items-center justify-center w-full px-4 bg-white mobile-nav flex">
+          <ul class="flex-col md:hidden items-center gap-10 menulist">
+            <li>
+              <a class="text-navtextcolor text-lg hover:font-bold" href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="text-navtextcolor text-lg hover:font-bold" href="#"
+                >Find a doctor</a
+              >
+            </li>
+            <li>
+              <a class="text-navtextcolor text-lg hover:font-bold" href="#"
+                >Apps</a
+              >
+            </li>
+            <li>
+              <a class="text-navtextcolor text-lg hover:font-bold" href="#"
+                >Tetimonials</a
+              >
+            </li>
+            <li>
+              <a class="text-navtextcolor text-lg hover:font-bold" href="#"
+                >About us</a
+              >
+            </li>
+          </ul>
+          </nav>
     </header>
 
     <!-- Main section -->
@@ -496,5 +525,6 @@
         </ul>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
